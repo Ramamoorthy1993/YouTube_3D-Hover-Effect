@@ -9,9 +9,9 @@ document.body.addEventListener("click", (event) => {
 
   if (clickedElement.classList.contains("open")) {
     clickedElement.classList.remove("open");
+    clickedElement.addEventListener.style="z-index:10";
     return;
   }
-
   imgs.forEach((img) => img.classList.remove("open"));
   clickedElement.classList.add("open");
 });
